@@ -6,7 +6,7 @@ state={
 	state_category = town
 
 	history={
-		owner = GRE
+		owner = MAC
 		victory_points = {
 			11818 5 
 		}
@@ -25,11 +25,12 @@ state={
 
 		}
 		add_core_of = GRE
+		add_core_of = MAC
 		add_claim_by = BUL
 
 	}
 	
 	provinces={
-		895 936 966 3526 3844 3936 10163 11818 
+		895 936 966 3526 3844 3936 10163 11818 9837
 	}
 }
