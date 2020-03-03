@@ -1,6 +1,7 @@
 ﻿l_russian:
  INS_HOL_democratic:0 "Голландская Ост-Индия"
  INS_HOL_democratic_DEF:0 "Голландская Ост-Индия"
+ BESSARABIA:0 "Бессабарбия"
  INS_subject:0 "$OVERLORDADJ$ Ост-Индия"
  INS_subject_DEF:0 "$OVERLORDADJ$ Ост-Индия"
  COG_subject:0 "$OVERLORDADJ$ Конго"
