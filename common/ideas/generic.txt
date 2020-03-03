@@ -1,0 +1,255 @@
+ideas = {
+	country = {
+		social_revolution = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -15
+
+			picture = socrev
+			
+			modifier = {
+				political_power_gain = 0.5
+				recription_factor = 0.05
+			}
+		}
+		free_election = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				political_power_gain = 0.5
+				recription_factor = 0.05
+			}
+		}
+		right_track = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				political_power_gain = 0.5
+				recription_factor = 0.05
+			}
+		}
+		central_colective = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrasture_factor = 0.1
+			}
+		}
+		decentral_colective = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrasture_factor = 0.2
+			}
+		}
+		burjua_angry = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				stability_factor = -0.15
+				neobol_drift = -0.05
+			}
+		}
+		cooperative = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrasture_factor = 0.2
+			}
+		}
+		industrialization = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				trade_laws_cost_factor = -0.25
+			}
+		}
+		anticapitalism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				trade_laws_cost_factor = -0.5
+			}
+		}
+		pacifism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				war_support_factor = -0.05
+			}
+		}
+		no_pacifism = {
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			cancel = {
+				
+			}
+			
+			removal_cost = -1
+
+			picture = socrev
+			
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+	}
+}

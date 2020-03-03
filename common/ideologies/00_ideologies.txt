@@ -1,0 +1,245 @@
+ideologies = {
+	
+	communism = {
+	
+		types = {
+			marx = {
+			}
+			trots = {
+			}
+			stal = {
+			}
+			mao = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 163 0 0 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_communist = yes 
+	}
+	
+	socialism = {
+	
+		types = {
+			socialism = {
+			}
+			socdem = {
+			}
+			littlies = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 221 35 0 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_communist = yes
+	}
+	
+	liberalism = {
+	
+		types = {
+			reformism = {
+			}
+			progressivism = {
+			}
+			socliber = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 255 205 0 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_democratic = yes 
+	}
+	
+	respublica = {
+	
+		types = {
+			dem = {
+			}
+			national = {
+			}
+			teologic = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 198 186 198 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_democratic = yes 
+	}
+
+	nationalism = {
+	
+		types = {
+			monarchism = {
+			}
+			fascism = {
+			}
+			nazi = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 128 104 196 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_fascism = yes 
+	}
+	
+	conservatism = {
+	
+		types = {
+			capitalism = {
+			}
+			traditionalism = {
+			}
+			neoconservatism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 82 104 196 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_fascism = yes 
+	}
+	
+	anarchism = {
+	
+		types = {
+			libertarian = {
+			}
+			anarchism = {
+			}
+			libercap = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 0 0 0 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_neutral = yes 
+	}
+	
+	sindicalism = {
+	
+		types = {
+			totalism = {
+			}
+			radicalism = {
+			}
+			anarchsind = {
+			}
+		}
+		
+		dynamic_faction_names = {
+		}
+		
+		color = { 101 128 50 }
+		
+		rules = {
+			can_puppet = yes
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1.00
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50
+		}
+		ai_neutral = yes 
+	}
+
+}

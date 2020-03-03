@@ -1,0 +1,49 @@
+burjua_war = {
+	burjua_low = {
+
+		icon = generic_civil_support
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}		
+		complete_effect = {
+			add_stability = -0.1
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 80
+		}		
+		days_remove = 30
+	}
+	burjua_war = {
+
+		icon = generic_civil_support
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}		
+		complete_effect = {
+			add_stability = 0.1
+			start_civil_war = {
+				ruling_party = neobol
+				ideology = liberalism
+				size = 0.4
+			}
+			remove_idea = burjua_angry
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		days_remove = 30
+	}
+}

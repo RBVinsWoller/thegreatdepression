@@ -1,0 +1,902 @@
+focus_tree = {
+	id = generic
+	country = {
+		factor = 1
+	}
+	default = yes
+	focus = {
+		id = political_moves
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 15
+		y = 0
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = let's_build_up_economy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		x = 36
+		y = 0
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = social_revolution
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = political_moves
+		}
+		mutually_exclusive = {
+			focus = democratic_ref
+			focus = right_path
+			focus = anarchism
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			add_ideas = social_revolution
+		}
+	}
+	focus = {
+		id = new_party_type
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = social_revolution
+		}
+		mutually_exclusive = {
+			focus = profunion
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
+		}
+	}
+	focus = {
+		id = burjua_war
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = new_party_type
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_ideas = burjua_angry
+			unlock_decision_category_tooltip = burjua_war
+		}
+	}
+	focus = {
+		id = central_col
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = burjua_war
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			add_ideas = central_colective
+		}
+	}
+	focus = {
+		id = industry_plan
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = central_col
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			add_ideas = industrialization
+		}
+	}
+	focus = {
+		id = war_internationalism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = industry_plan
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			add_ideas = no_pacifism
+		}
+	}
+	focus = {
+		id = profunion
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = social_revolution
+		}
+		mutually_exclusive = {
+			focus = new_party_type
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.25
+			}	
+		}
+	}
+	focus = {
+		id = united_soc_gov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = profunion
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = cooperation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = united_soc_gov
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			add_ideas = cooperative
+		}
+	}
+	focus = {
+		id = workers_control
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = cooperation
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = workers_democracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = workers_control
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = leadership
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = war_internationalism
+			focus = workers_democracy
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = anarchism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = political_moves
+		}
+		mutually_exclusive = {
+			focus = right_path
+			focus = democratic_ref
+			focus = social_revolution
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = sindicalism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = anarchism
+		}
+		mutually_exclusive = {
+			focus = true_anarchism
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = sindicat_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = sindicalism
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = true_anarchism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = anarchism
+		}
+		mutually_exclusive = {
+			focus = sindicalism
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = break_all_the_system
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = true_anarchism
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = moralisee_human
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = sindicat_reform
+			focus = break_all_the_system
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = profunion_conf
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = sindicat_reform
+		}
+		prerequisite = {
+			focus = moralisee_human
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = selfgov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = moralisee_human
+		}
+		prerequisite = {
+			focus = break_all_the_system
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = no_priviligence
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = selfgov
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = democratic_ref
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = political_moves
+		}
+		mutually_exclusive = {
+			focus = social_revolution
+			focus = right_path
+			focus = anarchism
+		}
+		x = 19
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = new_model_gov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = democratic_ref
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = parlamentarism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = new_model_gov
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = inst_free_elections
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = parlamentarism
+		}
+		x = 19
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = social_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inst_free_elections
+		}
+		mutually_exclusive = {
+			focus = main_stability
+		}
+		x = 16
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = economic_reform
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inst_free_elections
+		}
+		mutually_exclusive = {
+			focus = social_reform
+			focus = main_stability
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = free_human_market
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = economic_reform
+		}
+		x = 19
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = human_right
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = social_reform
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = main_stability
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inst_free_elections
+		}
+		mutually_exclusive = {
+			focus = economic_reform
+			focus = social_reform
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = private_traditions
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = main_stability
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = keen_on_democracy
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = human_right
+			focus = private_traditions
+			focus = free_human_market
+		}
+		x = 19
+		y = 7
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = right_path
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = political_moves
+		}
+		mutually_exclusive = {
+			focus = democratic_ref
+			focus = social_revolution
+			focus = anarchism
+		}
+		x = 27
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = patriotism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = right_path
+		}
+		x = 27
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = holyfication_nation
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = patriotism
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = national_fighter
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = holyfication_nation
+		}
+		mutually_exclusive = {
+			focus = dictator
+		}
+		x = 25
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = dictator
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = holyfication_nation
+		}
+		mutually_exclusive = {
+			focus = national_fighter
+		}
+		x = 29
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = control_politic
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = dictator
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = viva_fascismo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = control_politic
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = civilization
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = let's_build_up_economy
+		}
+		mutually_exclusive = {
+			focus = prepare_vous_pour_war
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = prepare_vous_pour_war
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = let's_build_up_economy
+		}
+		mutually_exclusive = {
+			focus = civilization
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = civil_1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = let's_build_up_economy
+			focus = civilization
+			focus = prepare_vous_pour_war
+		}
+		x = 35
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = civil_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = civil_1
+		}
+		x = 34
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = war_1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = let's_build_up_economy
+			focus = prepare_vous_pour_war
+			focus = civilization
+		}
+		x = 37
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = socialist_home
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = workers_democracy
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = showinism_fight
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = war_internationalism
+		}
+		mutually_exclusive = {
+			focus = socialist_home
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = inf_1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = civil_2
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = inf_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inf_1
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = civil_3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inf_2
+		}
+		x = 34
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = war_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = war_1
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = war_3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = war_2
+		}
+		x = 38
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = resources
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inf_2
+		}
+		x = 32
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = research
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = war_3
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = research_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = research
+		}
+		x = 38
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = nuclear
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = research_2
+		}
+		x = 38
+		y = 7
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = rocket
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = civil_3
+		}
+		x = 34
+		y = 7
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = research_construction
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = inf_2
+		}
+		prerequisite = {
+			focus = research
+		}
+		x = 36
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = cult_person
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = national_fighter
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = chapel_agree
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = cult_person
+		}
+		x = 25
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = industry_for_workers
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = profunion_conf
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = great_anarchism
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = industry_for_workers
+			focus = no_priviligence
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+
+		}
+	}
+}
