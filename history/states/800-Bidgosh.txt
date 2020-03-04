@@ -1,0 +1,27 @@
+state={
+	id=800
+	name="STATE_800"
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		victory_points = {
+			3295 5
+		}
+		victory_points = {
+			279 1
+		}
+		
+		add_core_of = GER
+		add_core_of = POL
+		add_core_of = PRU
+	}
+	provinces={
+		6347 3295 243 279
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -5,6 +5,6 @@
  TH:0 "-я"
  WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ война"
  CIVIL_WAR_NAME:0 "$ORDER$$SECOND$ гражданская война"
- WAR_TAKE_CORE_NAME:0 "$ORDER$$FIRST$ война за возвращение региона $STATE$"
+ WAR_TAKE_CORE_NAME:0 "$ORDER$$FIRST$ война за регион $STATE$"
  WAR_TAKE_CLAIM_NAME:0 "$ORDER$$FIRST$ нападение с целью захвата региона $STATE$"
  WAR_NAME_ITA_ETH:0 "Война Италии против Эфиопии"

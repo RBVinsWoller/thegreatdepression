@@ -10,44 +10,44 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = GER
 		#victory_points = { 6529 1 }
 		#victory_points = { 549 1 }
 		victory_points = { 678 5 }
 		victory_points = { 9503 5 }
 		victory_points = { 9559 10 }
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 3
+			infrastructure = 5
+			industrial_complex = 1
 			549 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			678 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			3629 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			6529 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			9503 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			9559 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			11502 = {
-				bunker = 10
+				bunker = 3
 
 			}
-			anti_air_building = 5
+			anti_air_building = 1
 			air_base = 5
 
 		}

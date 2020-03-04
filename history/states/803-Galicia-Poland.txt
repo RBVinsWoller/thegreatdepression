@@ -1,0 +1,23 @@
+state={
+	id=803
+	name="STATE_803"
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			11479 3
+		}
+		
+		add_core_of = POL
+		add_core_of = UKR
+		add_core_of = SOV
+	}
+	provinces={
+		536 11479 9468 6431 6483 6460
+	}
+	manpower=2500000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
