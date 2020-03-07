@@ -1,0 +1,26 @@
+state={
+	id=808
+	name="STATE_808"
+	resources={
+		oil=1 # was: 1
+		aluminium=2
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = INB
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2 
+		}
+		add_core_of = INB
+		add_core_of = BRA
+
+	}
+
+	provinces={
+		12919 13083 8254 8185 2198 5216 10960 5232 2147 12939 11010 12965
+	}
+}

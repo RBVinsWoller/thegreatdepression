@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = BRA
+		owner = UBC
 		buildings = {
 			infrastructure = 5
 			air_base = 2
@@ -16,6 +16,7 @@ state={
 			}
 		}
 		add_core_of = BRA
+		add_core_of = UBC
 		victory_points = {
 			10447 3 
 		}

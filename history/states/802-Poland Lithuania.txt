@@ -9,12 +9,14 @@ state={
 		victory_points = {
 			3488 3
 		}
-		
+		victory_points = {
+			3254 1
+		}
 		add_core_of = POL
 		add_core_of = LIT
 	}
 	provinces={
-		3272 6281 11312 6407
+		3272 3254 6281 11312 6407
 	}
 	manpower=50000
 	buildings_max_level_factor=1.000
