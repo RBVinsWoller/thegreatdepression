@@ -6,13 +6,15 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
-
+		victory_points = {
+			577 1 
+		}
 		add_core_of = SOV
 		add_core_of = ROM
 		add_core_of = BES
 	}
 	provinces={
-		3407 414
+		3407 414 577
 	}
 	manpower=50000
 	buildings_max_level_factor=1.000

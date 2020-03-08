@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = BEL
+		owner = GCA
 		buildings = {
 			infrastructure = 2
 

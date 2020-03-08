@@ -1,0 +1,30 @@
+state={
+	id=809
+	name="STATE_809"
+	resources={
+		oil=1 # was: 1
+	}
+	
+	state_category = town
+	
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			5074 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			5074 5
+		}
+		add_core_of = FRA
+		add_core_of = YEM
+
+	}
+
+	provinces={
+		5074
+	}
+}
